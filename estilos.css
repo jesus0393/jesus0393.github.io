@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red-bar: #B71C1C;
+  --grey-welcome: #212121;
+  --light-blue: #596275;
+  --grey-footer: #212121;
+}
+
+body {
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Proza Libre', sans-serif;
+}
+
+/*BARRA DE NAVEGACION*/
+nav {
+  display: flex;
+  background-color: var(--red-bar);
+  width: 100%;
+  height: 10vh;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+nav ul li:hover {
+  font-size: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* SECCION SOBRE MI */
+.aboutme {
+  display: flex;
+  background: var(--grey-welcome);
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.aboutme h1 {
+  font-size: 6rem;
+}
+
+.aboutme p {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-size: 4rem;
+}
+
+/* SECCION PORTAFOLIO */
+.portafolio {
+  background: var(--light-blue);
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.portafolio h2 {
+  margin-bottom: : 40px;
+}
+
+.grid-portafolio {
+  display: grid;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  min-height: 90vh;
+  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-rows: repeat(2, auto);
+}
+
+.tarjeta {
+  /* border: 1px solid; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: #008080;
+  border-radius: 4px;
+}
+
+.tarjeta img {
+  width: 100%;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.tarjeta .container p {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.tarjeta .container {
+  padding: 20px 15px;
+}
+
+.portafolio .container {
+  padding: 20px 15px;
+  color: #fff;
+}
+
+/*SECCION CONTACTO*/
+.contacto {
+  width: 100%;
+  min-height: 40vh;
+  background: var(--grey-welcome);
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+.contacto h4 {
+  font-size: 3rem;
+}
+
+.contacto p {
+  font-size: 1.5rem;
+}
+
+.contacto div {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.contacto div a {
+  text-decoration: none;
+  margin: 40px;
+  color: #fff;
+}
+
+.contacto div a:hover {
+  font-size: 1.5rem;
+}
